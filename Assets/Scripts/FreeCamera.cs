@@ -37,9 +37,7 @@ public class FreeCamera : MonoBehaviour
         transform.Translate(positionVector.x, 0, positionVector.z, Space.Self);
         transform.Translate(0, positionVector.y, 0, Space.World);
 
-        //Rotation
-
-        //transform.Rotate(-Input.GetAxis("Mouse Y"), Input.GetAxis("Mouse X"), 0);
+        
 
         rotationVector = transform.rotation.eulerAngles;
         rotationVector.x -= Input.GetAxis("Mouse Y") * mouseSensit;
